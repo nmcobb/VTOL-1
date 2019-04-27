@@ -21,10 +21,10 @@ comm_sim_on = False
 class SearchArea:
     def __init__(self, tl, tr, bl, br):
 	# tl-br are tuples containing the coordinates of rectangle corners
-	self.tl = (bytes.fromhex(tl[0]), bytes.fromhex(tl[1]))
-	self.tr = (bytes.fromhex(tr[0]), bytes.fromhex(tr[1]))
-	self.bl = (bytes.fromhex(bl[0]), bytes.fromhex(bl[1]))
-	self.br = (bytes.fromhex(br[0]), bytes.fromhex(br[1]))
+	self.tl = tl
+	self.tr = tr
+	self.bl = bl
+	self.br = br
 
     def __str__(self):
         return "SearchArea(" + \
@@ -51,12 +51,8 @@ def xbee_callback(compressed_message, autonomyToCV):
 
         if msg_type == "addMission":
             area = msg["missionInfo"]["searchArea"]
-<<<<<<< HEAD
             search_area = SearchArea(area["topLeft"], area["topRight"],
                 area["bottomLeft"], area["bottomRight"])
-=======
-            search_area = SearchArea(area["center"], area["rad1"], area["rad2"])
->>>>>>> upstream/master
             autonomy.start_mission = True
             acknowledge(address, msg["id"], autonomyToCV)
 
@@ -100,26 +96,26 @@ def generate_waypoints(configs, search_area):
     lat = start[0]
     lon = start[1]
     startX, startY, startZ = geodetic2ecef(lat, lon, altitude)
-    n, e, d = ecef2ned(startX, startY, startZ, lat, lon, altitude)
-    waypointsLLA.append(LocationGlobalRelative(lat, lon, altitude))
-    waypointsNED.append([n, e, d])
+    start_n, start_e, d = ecef2ned(startX, startY, startZ, lat, lon, altitude)
 
     endX, endY, endZ = geodetic2ecef(end[0], end[1], altitude)
-    n2, e2, d2 = ecef2ned(endX, endY, endZ, end[0], end[1], altitude)
+    end_n, end_e, end_d = ecef2ned(endX, endY, endZ, end[0], end[1], altitude)
 
-    fovH = math.radians(62.2)  # raspicam horizontal FOV
-    boxH = 2 * altitude / math.tan(fovH / 2)  # height of bounding box
-    overlap = (0.5 * boxH) / (2 * math.pi)  # distance between zags with 50% overlap
+#    fovH = math.radians(62.2)  # raspicam horizontal FOV
+#    boxH = 2 * altitude / math.tan(fovH / 2)  # height of bounding box
+#    overlap = (0.5 * boxH) / (2 * math.pi)  # distance between zags with 50% overlap
 
-    temp_n = n
-    while tempn <= n2:
-        temp_e = e
+    overlap = 3 # 3 meters
+
+    temp_n = start_n
+    while temp_n <= end_n:
+        temp_e = start_e
         # convert NED to LLA
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
         waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
 
-        temp_e = e2
+        temp_e = end_e
         # convert ECEF to NED and LLA
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
@@ -130,13 +126,13 @@ def generate_waypoints(configs, search_area):
         #                     |
         # --------------------|
 
-        temp_e = e2
+        temp_e = end_e
         # convert ECEF to NED and LLA
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
         waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
 
-        temp_e = e
+        temp_e = start_e
         # convert ECEF to NED and LLA
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
@@ -297,9 +293,6 @@ def quick_scan_autonomy(configs, autonomyToCV, gcs_timestamp, connection_timesta
     if comm_sim:
         comm_sim.join()
     else:
-<<<<<<< HEAD
-        autonomy.xbee.close()
-=======
         autonomyToCV.xbeeMutex.acquire()
         autonomy.xbee.close()
         autonomyToCV.xbeeMutex.release()
@@ -313,5 +306,3 @@ def set_autonomytocv_start(autonomyToCV, start):
     autonomyToCV.startMutex.acquire()
     autonomyToCV.start = start
     autonomyToCV.startMutex.release()
-
->>>>>>> upstream/master

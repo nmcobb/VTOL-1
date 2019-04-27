@@ -1,0 +1,226 @@
+
+######################## STARTING QUICK SCAN AUTONOMY ########################
+Starting Quickscan CV
+Received data from comms simulation: {u'missionInfo': {u'searchArea': {u'topLeft': [35.338375, -120.852615], u'bottomLeft': [35.328375, -120.852615], u'topRight': [35.338375, -120.842615], u'bottomRight': [35.328375, -120.842615]}}, u'type': u'addMission', u'id': 0}
+Begin generating waypoints
+Starting copter simulator (SITL)
+SITL already Downloaded and Extracted.
+Ready to boot.
+>>> APM:Copter V3.3 (d6053245)
+>>> Frame: QUAD
+>>> Calibrating barometer
+>>> Initialising APM...
+>>> barometer calibration complete
+>>> GROUND START
+Starting update thread
+ Clear any existing commands
+
+ Define/add new commands.
+Upload new commands to vehicle
+ Waiting for vehicle to initialise...
+>>> flight plan received
+ Waiting for vehicle to initialise...
+ Waiting for vehicle to initialise...
+ Waiting for vehicle to initialise...
+ Waiting for arming...
+ Waiting for arming...
+ Waiting for arming...
+ Waiting for arming...
+>>> ARMING MOTORS
+>>> GROUND START
+ Waiting for arming...
+>>> Initialising APM...
+LocationGlobalRelative:lat=35.328423,lon=-120.7525051,alt=0.0
+Beginning to take and store images
+
+LocationGlobalRelative:lat=35.3284231,lon=-120.7525059,alt=0.0
+LocationGlobalRelative:lat=35.3284231,lon=-120.752506,alt=0.09
+LocationGlobalRelative:lat=35.328423,lon=-120.7525051,alt=1.15
+LocationGlobalRelative:lat=35.328423,lon=-120.7525048,alt=2.93
+LocationGlobalRelative:lat=35.328423,lon=-120.7525048,alt=4.97
+LocationGlobalRelative:lat=35.328423,lon=-120.7525049,alt=7.1
+LocationGlobalRelative:lat=35.3284232,lon=-120.7525055,alt=8.83
+LocationGlobalRelative:lat=35.3284234,lon=-120.7525091,alt=9.6
+LocationGlobalRelative:lat=35.3284229,lon=-120.7525206,alt=9.85
+LocationGlobalRelative:lat=35.3284235,lon=-120.7525445,alt=9.95
+LocationGlobalRelative:lat=35.3284239,lon=-120.7525731,alt=9.98
+LocationGlobalRelative:lat=35.3284239,lon=-120.7526108,alt=9.99
+LocationGlobalRelative:lat=35.3284241,lon=-120.7526708,alt=9.98
+LocationGlobalRelative:lat=35.3284241,lon=-120.7527281,alt=9.98
+LocationGlobalRelative:lat=35.328424,lon=-120.7527921,alt=9.98
+LocationGlobalRelative:lat=35.328424,lon=-120.752862,alt=9.97
+LocationGlobalRelative:lat=35.3284238,lon=-120.7529373,alt=9.97
+LocationGlobalRelative:lat=35.3284238,lon=-120.7530174,alt=9.97
+LocationGlobalRelative:lat=35.3284236,lon=-120.7531227,alt=9.97
+LocationGlobalRelative:lat=35.3284233,lon=-120.7531883,alt=9.97
+LocationGlobalRelative:lat=35.3284234,lon=-120.7533009,alt=9.97
+LocationGlobalRelative:lat=35.3284234,lon=-120.7533703,alt=9.96
+LocationGlobalRelative:lat=35.3284234,lon=-120.7534647,alt=9.96
+LocationGlobalRelative:lat=35.3284234,lon=-120.7535604,alt=9.97
+LocationGlobalRelative:lat=35.3284234,lon=-120.7536576,alt=9.97
+LocationGlobalRelative:lat=35.3284235,lon=-120.753756,alt=9.97
+LocationGlobalRelative:lat=35.3284235,lon=-120.7538553,alt=9.97
+LocationGlobalRelative:lat=35.3284237,lon=-120.7539551,alt=9.97
+LocationGlobalRelative:lat=35.3284238,lon=-120.7540555,alt=9.97
+LocationGlobalRelative:lat=35.3284234,lon=-120.7541564,alt=9.97
+LocationGlobalRelative:lat=35.328423,lon=-120.7542836,alt=9.97
+LocationGlobalRelative:lat=35.3284229,lon=-120.7543859,alt=9.98
+LocationGlobalRelative:lat=35.3284224,lon=-120.7544885,alt=9.98
+LocationGlobalRelative:lat=35.3284217,lon=-120.7545918,alt=9.99
+LocationGlobalRelative:lat=35.3284216,lon=-120.754695,alt=9.99
+LocationGlobalRelative:lat=35.3284216,lon=-120.7547726,alt=9.99
+LocationGlobalRelative:lat=35.3284213,lon=-120.7548767,alt=9.99
+LocationGlobalRelative:lat=35.3284211,lon=-120.7550071,alt=10.0
+LocationGlobalRelative:lat=35.3284207,lon=-120.7551114,alt=10.0
+LocationGlobalRelative:lat=35.3284206,lon=-120.7552161,alt=10.0
+LocationGlobalRelative:lat=35.3284207,lon=-120.7553211,alt=10.0
+LocationGlobalRelative:lat=35.3284208,lon=-120.7554523,alt=10.0
+LocationGlobalRelative:lat=35.328421,lon=-120.7555312,alt=10.0
+LocationGlobalRelative:lat=35.328421,lon=-120.7556629,alt=10.0
+LocationGlobalRelative:lat=35.3284207,lon=-120.7557684,alt=10.01
+LocationGlobalRelative:lat=35.3284206,lon=-120.7558734,alt=10.01
+LocationGlobalRelative:lat=35.3284204,lon=-120.7559784,alt=10.0
+LocationGlobalRelative:lat=35.3284203,lon=-120.7560839,alt=10.0
+LocationGlobalRelative:lat=35.3284203,lon=-120.7561894,alt=10.01
+LocationGlobalRelative:lat=35.3284203,lon=-120.7562947,alt=10.01
+LocationGlobalRelative:lat=35.3284202,lon=-120.7563999,alt=10.01
+LocationGlobalRelative:lat=35.32842,lon=-120.756505,alt=10.01
+LocationGlobalRelative:lat=35.32842,lon=-120.7566367,alt=10.01
+LocationGlobalRelative:lat=35.32842,lon=-120.7567418,alt=10.01
+LocationGlobalRelative:lat=35.3284198,lon=-120.7568471,alt=10.0
+LocationGlobalRelative:lat=35.3284198,lon=-120.7569527,alt=10.0
+LocationGlobalRelative:lat=35.3284198,lon=-120.7570319,alt=10.0
+LocationGlobalRelative:lat=35.3284203,lon=-120.7571374,alt=10.0
+LocationGlobalRelative:lat=35.3284205,lon=-120.757243,alt=10.0
+LocationGlobalRelative:lat=35.3284206,lon=-120.7573488,alt=10.0
+LocationGlobalRelative:lat=35.3284204,lon=-120.7574546,alt=10.0
+LocationGlobalRelative:lat=35.3284204,lon=-120.7575865,alt=10.0
+LocationGlobalRelative:lat=35.3284203,lon=-120.7576922,alt=10.0
+LocationGlobalRelative:lat=35.3284201,lon=-120.7577979,alt=10.0
+LocationGlobalRelative:lat=35.3284198,lon=-120.7579034,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7580086,alt=10.0
+LocationGlobalRelative:lat=35.3284198,lon=-120.7581139,alt=9.99
+LocationGlobalRelative:lat=35.32842,lon=-120.7582196,alt=9.99
+LocationGlobalRelative:lat=35.32842,lon=-120.7583254,alt=9.99
+LocationGlobalRelative:lat=35.3284198,lon=-120.7584309,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7585362,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7586417,alt=9.99
+LocationGlobalRelative:lat=35.3284197,lon=-120.7587476,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7588533,alt=9.99
+LocationGlobalRelative:lat=35.3284195,lon=-120.7589588,alt=9.99
+LocationGlobalRelative:lat=35.3284195,lon=-120.7590906,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7591963,alt=9.99
+LocationGlobalRelative:lat=35.3284198,lon=-120.7593021,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7594076,alt=9.99
+LocationGlobalRelative:lat=35.3284197,lon=-120.7595132,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.759619,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7597246,alt=9.99
+LocationGlobalRelative:lat=35.3284195,lon=-120.7598565,alt=9.99
+LocationGlobalRelative:lat=35.3284196,lon=-120.7599357,alt=9.99
+LocationGlobalRelative:lat=35.3284193,lon=-120.7600678,alt=9.99
+LocationGlobalRelative:lat=35.3284194,lon=-120.7601734,alt=10.0
+LocationGlobalRelative:lat=35.3284193,lon=-120.7602788,alt=9.99
+LocationGlobalRelative:lat=35.3284192,lon=-120.7603579,alt=9.99
+LocationGlobalRelative:lat=35.3284193,lon=-120.7604637,alt=9.99
+LocationGlobalRelative:lat=35.3284192,lon=-120.7605694,alt=9.99
+LocationGlobalRelative:lat=35.328419,lon=-120.7606751,alt=9.99
+LocationGlobalRelative:lat=35.3284187,lon=-120.7607808,alt=9.99
+LocationGlobalRelative:lat=35.3284185,lon=-120.7609129,alt=9.99
+LocationGlobalRelative:lat=35.3284183,lon=-120.7610188,alt=9.99
+LocationGlobalRelative:lat=35.3284182,lon=-120.7611246,alt=9.99
+LocationGlobalRelative:lat=35.3284179,lon=-120.7612308,alt=9.99
+LocationGlobalRelative:lat=35.3284178,lon=-120.7613369,alt=10.0
+LocationGlobalRelative:lat=35.3284178,lon=-120.761443,alt=10.0
+LocationGlobalRelative:lat=35.3284176,lon=-120.7615491,alt=10.0
+LocationGlobalRelative:lat=35.3284179,lon=-120.7616551,alt=10.0
+LocationGlobalRelative:lat=35.328418,lon=-120.7617345,alt=10.0
+LocationGlobalRelative:lat=35.3284177,lon=-120.7618664,alt=10.0
+LocationGlobalRelative:lat=35.3284177,lon=-120.7619717,alt=10.01
+LocationGlobalRelative:lat=35.3284177,lon=-120.7620772,alt=10.01
+LocationGlobalRelative:lat=35.3284178,lon=-120.7621824,alt=10.01
+LocationGlobalRelative:lat=35.3284178,lon=-120.7623138,alt=10.01
+LocationGlobalRelative:lat=35.3284179,lon=-120.7624193,alt=10.01
+LocationGlobalRelative:lat=35.3284182,lon=-120.7625249,alt=10.01
+LocationGlobalRelative:lat=35.3284184,lon=-120.762657,alt=10.01
+LocationGlobalRelative:lat=35.3284184,lon=-120.7627628,alt=10.0
+LocationGlobalRelative:lat=35.3284184,lon=-120.7628686,alt=10.0
+LocationGlobalRelative:lat=35.3284183,lon=-120.7629744,alt=10.0
+LocationGlobalRelative:lat=35.3284182,lon=-120.7631066,alt=10.0
+LocationGlobalRelative:lat=35.3284179,lon=-120.7632387,alt=10.0
+LocationGlobalRelative:lat=35.3284178,lon=-120.7633443,alt=10.0
+LocationGlobalRelative:lat=35.3284176,lon=-120.7634239,alt=9.99
+LocationGlobalRelative:lat=35.3284177,lon=-120.7635563,alt=10.0
+LocationGlobalRelative:lat=35.3284177,lon=-120.7636619,alt=9.99
+LocationGlobalRelative:lat=35.3284172,lon=-120.7637677,alt=9.99
+LocationGlobalRelative:lat=35.3284171,lon=-120.7638733,alt=9.99
+LocationGlobalRelative:lat=35.3284171,lon=-120.7639786,alt=9.99
+LocationGlobalRelative:lat=35.3284168,lon=-120.7640842,alt=9.99
+LocationGlobalRelative:lat=35.3284169,lon=-120.76419,alt=9.99
+LocationGlobalRelative:lat=35.3284168,lon=-120.7642956,alt=9.99
+LocationGlobalRelative:lat=35.3284165,lon=-120.7644272,alt=9.99
+LocationGlobalRelative:lat=35.3284165,lon=-120.7645062,alt=9.99
+LocationGlobalRelative:lat=35.3284165,lon=-120.7646116,alt=9.99
+LocationGlobalRelative:lat=35.3284166,lon=-120.7647176,alt=9.99
+LocationGlobalRelative:lat=35.3284165,lon=-120.7648235,alt=9.99
+LocationGlobalRelative:lat=35.3284166,lon=-120.7649292,alt=10.0
+LocationGlobalRelative:lat=35.3284169,lon=-120.7650345,alt=10.0
+LocationGlobalRelative:lat=35.3284169,lon=-120.7651401,alt=10.0
+LocationGlobalRelative:lat=35.328417,lon=-120.7652457,alt=10.0
+LocationGlobalRelative:lat=35.328417,lon=-120.7653515,alt=10.0
+LocationGlobalRelative:lat=35.3284169,lon=-120.7654571,alt=9.99
+LocationGlobalRelative:lat=35.328417,lon=-120.7655894,alt=9.99
+LocationGlobalRelative:lat=35.3284169,lon=-120.7656953,alt=9.99
+LocationGlobalRelative:lat=35.3284166,lon=-120.7658009,alt=9.99
+LocationGlobalRelative:lat=35.3284164,lon=-120.7659062,alt=9.98
+LocationGlobalRelative:lat=35.3284162,lon=-120.7660115,alt=9.98
+LocationGlobalRelative:lat=35.3284162,lon=-120.7661435,alt=9.98
+LocationGlobalRelative:lat=35.3284164,lon=-120.7662488,alt=9.98
+LocationGlobalRelative:lat=35.3284163,lon=-120.7663543,alt=9.99
+LocationGlobalRelative:lat=35.3284161,lon=-120.7664596,alt=9.98
+LocationGlobalRelative:lat=35.3284162,lon=-120.7665649,alt=9.98
+LocationGlobalRelative:lat=35.328416,lon=-120.7666707,alt=9.99
+LocationGlobalRelative:lat=35.3284158,lon=-120.766776,alt=9.99
+LocationGlobalRelative:lat=35.3284157,lon=-120.7668808,alt=9.99
+LocationGlobalRelative:lat=35.3284158,lon=-120.766986,alt=9.99
+LocationGlobalRelative:lat=35.3284159,lon=-120.7670913,alt=9.99
+LocationGlobalRelative:lat=35.3284158,lon=-120.7671965,alt=9.99
+LocationGlobalRelative:lat=35.3284157,lon=-120.7673018,alt=9.99
+LocationGlobalRelative:lat=35.328416,lon=-120.7674076,alt=9.99
+LocationGlobalRelative:lat=35.328416,lon=-120.7675132,alt=10.0
+LocationGlobalRelative:lat=35.3284156,lon=-120.767645,alt=10.0
+LocationGlobalRelative:lat=35.3284154,lon=-120.767751,alt=10.0
+LocationGlobalRelative:lat=35.3284153,lon=-120.7678568,alt=10.0
+LocationGlobalRelative:lat=35.3284149,lon=-120.7679624,alt=10.01
+LocationGlobalRelative:lat=35.3284147,lon=-120.7680945,alt=10.01
+LocationGlobalRelative:lat=35.3284146,lon=-120.7681998,alt=10.01
+LocationGlobalRelative:lat=35.3284146,lon=-120.7683054,alt=10.01
+LocationGlobalRelative:lat=35.3284145,lon=-120.7683847,alt=10.01
+LocationGlobalRelative:lat=35.3284147,lon=-120.7685162,alt=10.02
+LocationGlobalRelative:lat=35.3284149,lon=-120.7686211,alt=10.02
+LocationGlobalRelative:lat=35.3284148,lon=-120.7687259,alt=10.02
+LocationGlobalRelative:lat=35.3284146,lon=-120.7688306,alt=10.02
+LocationGlobalRelative:lat=35.3284144,lon=-120.7689354,alt=10.01
+LocationGlobalRelative:lat=35.3284143,lon=-120.7690403,alt=10.01
+LocationGlobalRelative:lat=35.3284142,lon=-120.7691454,alt=10.01
+LocationGlobalRelative:lat=35.3284142,lon=-120.769251,alt=10.0
+LocationGlobalRelative:lat=35.3284144,lon=-120.769356,alt=10.0
+LocationGlobalRelative:lat=35.3284142,lon=-120.7694612,alt=9.99
+LocationGlobalRelative:lat=35.328414,lon=-120.769567,alt=9.99
+LocationGlobalRelative:lat=35.3284142,lon=-120.7696721,alt=9.99
+LocationGlobalRelative:lat=35.3284143,lon=-120.7697774,alt=9.98
+LocationGlobalRelative:lat=35.3284144,lon=-120.769909,alt=9.98
+LocationGlobalRelative:lat=35.3284146,lon=-120.7700138,alt=9.98
+LocationGlobalRelative:lat=35.3284149,lon=-120.7701188,alt=9.97
+LocationGlobalRelative:lat=35.3284149,lon=-120.7702246,alt=9.97
+LocationGlobalRelative:lat=35.328415,lon=-120.7703039,alt=9.97
+LocationGlobalRelative:lat=35.3284147,lon=-120.7704093,alt=9.97
+LocationGlobalRelative:lat=35.3284149,lon=-120.7705407,alt=9.97
+LocationGlobalRelative:lat=35.3284151,lon=-120.7706455,alt=9.97
+LocationGlobalRelative:lat=35.3284149,lon=-120.7707503,alt=9.97
+LocationGlobalRelative:lat=35.3284146,lon=-120.7708555,alt=9.97
+LocationGlobalRelative:lat=35.3284146,lon=-120.7709343,alt=9.97
+LocationGlobalRelative:lat=35.3284146,lon=-120.7710652,alt=9.97
+LocationGlobalRelative:lat=35.3284146,lon=-120.77117,alt=9.97
+LocationGlobalRelative:lat=35.3284143,lon=-120.7712748,alt=9.98
+LocationGlobalRelative:lat=35.3284142,lon=-120.7714062,alt=9.98
+LocationGlobalRelative:lat=35.328414,lon=-120.7715115,al

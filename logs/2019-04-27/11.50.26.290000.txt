@@ -1,0 +1,21 @@
+
+######################## STARTING QUICK SCAN AUTONOMY ########################
+ Starting Quickscan CV
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "C:\Python27\lib\threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "C:\Python27\lib\threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "C:\Users\Terry H\Documents\GitHub\VTOL\autonomy.py", line 257, in comm_simulation
+    comms = json.load(open(comm_file, "r"))  # reads the json file
+  File "C:\Python27\lib\json\__init__.py", line 291, in load
+    **kw)
+  File "C:\Python27\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python27\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python27\lib\json\decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+ValueError: Expecting property name: line 12 column 17 (char 394)
+
