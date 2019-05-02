@@ -1,0 +1,159 @@
+
+######################## STARTING QUICK SCAN AUTONOMY ########################
+Starting Quickscan CV
+Received data from comms simulation: {u'missionInfo': {u'searchArea': {u'topLeft': [35.348375, -120.762615], u'bottomLeft': [35.328375, -120.762615], u'topRight': [35.348375, -120.752615], u'bottomRight': [35.328375, -120.752615]}}, u'type': u'addMission', u'id': 0}
+Begin generating waypoints
+Starting copter simulator (SITL)
+SITL already Downloaded and Extracted.
+Ready to boot.
+>>> APM:Copter V3.3 (d6053245)
+>>> Frame: QUAD
+>>> Calibrating barometer
+>>> Initialising APM...
+>>> barometer calibration complete
+>>> GROUND START
+Starting update thread
+ Clear any existing commands
+
+ Define/add new commands.
+Upload new commands to vehicle
+ Waiting for vehicle to initialise...
+>>> flight plan received
+ Waiting for vehicle to initialise...
+ Waiting for vehicle to initialise...
+ Waiting for vehicle to initialise...
+ Waiting for vehicle to initialise...
+ Waiting for arming...
+ Waiting for arming...
+ Waiting for arming...
+ Waiting for arming...
+>>> ARMING MOTORS
+>>> GROUND START
+ Waiting for arming...
+>>> Link timeout, no heartbeat in last 5 seconds
+>>> ...link restored.
+>>> Initialising APM...
+ Waiting for arming...
+LocationGlobalRelative:lat=35.328423,lon=-120.7525054,alt=0.0
+Beginning to take and store images
+
+LocationGlobalRelative:lat=35.328423,lon=-120.752506,alt=0.0
+LocationGlobalRelative:lat=35.3284231,lon=-120.752506,alt=0.05
+LocationGlobalRelative:lat=35.328423,lon=-120.7525055,alt=1.0
+LocationGlobalRelative:lat=35.328423,lon=-120.7525054,alt=2.73
+LocationGlobalRelative:lat=35.328423,lon=-120.7525054,alt=4.24
+LocationGlobalRelative:lat=35.3284232,lon=-120.7525056,alt=6.36
+LocationGlobalRelative:lat=35.3284233,lon=-120.7525062,alt=8.32
+LocationGlobalRelative:lat=35.3284235,lon=-120.7525082,alt=9.42
+LocationGlobalRelative:lat=35.3284231,lon=-120.7525148,alt=9.73
+LocationGlobalRelative:lat=35.3284227,lon=-120.7525294,alt=9.9
+LocationGlobalRelative:lat=35.3284233,lon=-120.7525515,alt=9.96
+LocationGlobalRelative:lat=35.3284234,lon=-120.7525824,alt=9.98
+LocationGlobalRelative:lat=35.3284233,lon=-120.7526224,alt=9.99
+LocationGlobalRelative:lat=35.3284233,lon=-120.7526716,alt=9.98
+LocationGlobalRelative:lat=35.3284231,lon=-120.752729,alt=9.98
+LocationGlobalRelative:lat=35.328423,lon=-120.7527931,alt=9.98
+LocationGlobalRelative:lat=35.3284227,lon=-120.752863,alt=9.98
+LocationGlobalRelative:lat=35.3284223,lon=-120.7529386,alt=9.97
+LocationGlobalRelative:lat=35.328422,lon=-120.7530188,alt=9.97
+LocationGlobalRelative:lat=35.3284215,lon=-120.7531028,alt=9.97
+LocationGlobalRelative:lat=35.3284209,lon=-120.7531901,alt=9.97
+LocationGlobalRelative:lat=35.3284208,lon=-120.7532801,alt=9.97
+LocationGlobalRelative:lat=35.3284204,lon=-120.7533961,alt=9.96
+LocationGlobalRelative:lat=35.3284201,lon=-120.7534671,alt=9.96
+LocationGlobalRelative:lat=35.3284196,lon=-120.7535872,alt=9.96
+LocationGlobalRelative:lat=35.3284194,lon=-120.753685,alt=9.96
+LocationGlobalRelative:lat=35.3284188,lon=-120.7538086,alt=9.96
+LocationGlobalRelative:lat=35.3284185,lon=-120.7539082,alt=9.97
+LocationGlobalRelative:lat=35.3284183,lon=-120.7540084,alt=9.97
+LocationGlobalRelative:lat=35.3284175,lon=-120.7541091,alt=9.97
+LocationGlobalRelative:lat=35.3284166,lon=-120.7542105,alt=9.97
+LocationGlobalRelative:lat=35.3284159,lon=-120.7543126,alt=9.97
+LocationGlobalRelative:lat=35.3284152,lon=-120.7544149,alt=9.98
+LocationGlobalRelative:lat=35.328414,lon=-120.7545178,alt=9.98
+LocationGlobalRelative:lat=35.3284132,lon=-120.7546209,alt=9.98
+LocationGlobalRelative:lat=35.3284127,lon=-120.7547242,alt=9.99
+LocationGlobalRelative:lat=35.3284119,lon=-120.7548541,alt=9.99
+LocationGlobalRelative:lat=35.3284113,lon=-120.7549583,alt=9.99
+LocationGlobalRelative:lat=35.3284105,lon=-120.7550625,alt=10.0
+LocationGlobalRelative:lat=35.3284097,lon=-120.7551932,alt=10.0
+LocationGlobalRelative:lat=35.3284094,lon=-120.7552981,alt=10.0
+LocationGlobalRelative:lat=35.328409,lon=-120.7554029,alt=10.0
+LocationGlobalRelative:lat=35.3284088,lon=-120.755508,alt=10.0
+LocationGlobalRelative:lat=35.3284084,lon=-120.7556132,alt=10.0
+LocationGlobalRelative:lat=35.3284075,lon=-120.7557187,alt=10.0
+LocationGlobalRelative:lat=35.328407,lon=-120.7558237,alt=10.01
+LocationGlobalRelative:lat=35.3284065,lon=-120.7559024,alt=10.0
+LocationGlobalRelative:lat=35.3284058,lon=-120.7560076,alt=10.0
+LocationGlobalRelative:lat=35.3284053,lon=-120.7561394,alt=10.01
+LocationGlobalRelative:lat=35.3284048,lon=-120.7562447,alt=10.01
+LocationGlobalRelative:lat=35.3284043,lon=-120.75635,alt=10.01
+LocationGlobalRelative:lat=35.3284037,lon=-120.756455,alt=10.01
+LocationGlobalRelative:lat=35.3284032,lon=-120.7565602,alt=10.01
+LocationGlobalRelative:lat=35.3284029,lon=-120.7566653,alt=10.01
+LocationGlobalRelative:lat=35.3284024,lon=-120.7567704,alt=10.0
+LocationGlobalRelative:lat=35.3284018,lon=-120.7568759,alt=10.0
+LocationGlobalRelative:lat=35.3284015,lon=-120.7569551,alt=10.0
+LocationGlobalRelative:lat=35.3284013,lon=-120.757087,alt=10.0
+LocationGlobalRelative:lat=35.3284012,lon=-120.7571925,alt=10.0
+LocationGlobalRelative:lat=35.3284008,lon=-120.7572982,alt=10.0
+LocationGlobalRelative:lat=35.3284001,lon=-120.7574303,alt=10.0
+LocationGlobalRelative:lat=35.3283997,lon=-120.7575094,alt=10.0
+LocationGlobalRelative:lat=35.3283991,lon=-120.7576416,alt=10.0
+LocationGlobalRelative:lat=35.3283985,lon=-120.7577473,alt=10.0
+LocationGlobalRelative:lat=35.328398,lon=-120.7578264,alt=10.0
+LocationGlobalRelative:lat=35.3283972,lon=-120.757958,alt=10.0
+LocationGlobalRelative:lat=35.3283969,lon=-120.7580632,alt=9.99
+LocationGlobalRelative:lat=35.3283968,lon=-120.7581688,alt=9.99
+LocationGlobalRelative:lat=35.3283963,lon=-120.7582746,alt=9.99
+LocationGlobalRelative:lat=35.3283955,lon=-120.7584065,alt=9.99
+LocationGlobalRelative:lat=35.3283949,lon=-120.7585118,alt=9.99
+LocationGlobalRelative:lat=35.3283945,lon=-120.7586172,alt=9.99
+LocationGlobalRelative:lat=35.3283941,lon=-120.7587231,alt=9.99
+LocationGlobalRelative:lat=35.3283936,lon=-120.7588288,alt=9.99
+LocationGlobalRelative:lat=35.3283931,lon=-120.7589343,alt=9.99
+LocationGlobalRelative:lat=35.3283925,lon=-120.7590662,alt=9.99
+LocationGlobalRelative:lat=35.3283922,lon=-120.7591719,alt=9.99
+LocationGlobalRelative:lat=35.3283919,lon=-120.7592777,alt=9.99
+LocationGlobalRelative:lat=35.3283913,lon=-120.7593832,alt=9.99
+LocationGlobalRelative:lat=35.3283909,lon=-120.7594888,alt=9.99
+LocationGlobalRelative:lat=35.3283904,lon=-120.7595946,alt=9.99
+LocationGlobalRelative:lat=35.32839,lon=-120.7597002,alt=9.99
+LocationGlobalRelative:lat=35.3283895,lon=-120.7598057,alt=9.99
+LocationGlobalRelative:lat=35.3283892,lon=-120.7599112,alt=9.99
+LocationGlobalRelative:lat=35.3283885,lon=-120.7600168,alt=9.99
+LocationGlobalRelative:lat=35.328388,lon=-120.7601224,alt=10.0
+LocationGlobalRelative:lat=35.3283875,lon=-120.7602278,alt=9.99
+LocationGlobalRelative:lat=35.328387,lon=-120.7603333,alt=9.99
+LocationGlobalRelative:lat=35.3283867,lon=-120.760439,alt=9.99
+LocationGlobalRelative:lat=35.3283861,lon=-120.7605447,alt=9.99
+LocationGlobalRelative:lat=35.3283855,lon=-120.7606504,alt=9.99
+LocationGlobalRelative:lat=35.3283848,lon=-120.7607562,alt=9.99
+LocationGlobalRelative:lat=35.3283842,lon=-120.760862,alt=9.99
+LocationGlobalRelative:lat=35.3283834,lon=-120.7609942,alt=9.99
+LocationGlobalRelative:lat=35.3283828,lon=-120.7611001,alt=9.99
+LocationGlobalRelative:lat=35.3283823,lon=-120.7611795,alt=9.99
+LocationGlobalRelative:lat=35.3283816,lon=-120.7613123,alt=10.0
+LocationGlobalRelative:lat=35.3283811,lon=-120.7614185,alt=10.0
+LocationGlobalRelative:lat=35.3283806,lon=-120.7615245,alt=10.0
+LocationGlobalRelative:lat=35.3283804,lon=-120.7616305,alt=10.0
+LocationGlobalRelative:lat=35.32838,lon=-120.7617363,alt=10.0
+LocationGlobalRelative:lat=35.3283794,lon=-120.7618419,alt=10.0
+LocationGlobalRelative:lat=35.328379,lon=-120.7619473,alt=10.01
+>>> Reached Command #3
+LocationGlobalRelative:lat=35.3283783,lon=-120.7620792,alt=10.01
+LocationGlobalRelative:lat=35.3283781,lon=-120.7621809,alt=10.03
+LocationGlobalRelative:lat=35.3283777,lon=-120.7622947,alt=10.02
+LocationGlobalRelative:lat=35.3283777,lon=-120.7623767,alt=10.02
+LocationGlobalRelative:lat=35.3283779,lon=-120.7624496,alt=10.02
+LocationGlobalRelative:lat=35.328378,lon=-120.7625123,alt=10.02
+LocationGlobalRelative:lat=35.3283779,lon=-120.7625741,alt=10.02
+LocationGlobalRelative:lat=35.3283777,lon=-120.7626076,alt=10.0
+>>> Reached Command #4
+LocationGlobalRelative:lat=35.3283775,lon=-120.7626216,alt=9.97
+LocationGlobalRelative:lat=35.3283783,lon=-120.7626253,alt=9.97
+LocationGlobalRelative:lat=35.3283868,lon=-120.762627,alt=9.99
+>>> Reached Command #5
+LocationGlobalRelative:lat=35.3283963,lon=-120.7626251,alt=9.99
+>>> Reached Command #6
+>>> Reached Command #7
