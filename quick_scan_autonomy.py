@@ -97,10 +97,14 @@ def generate_waypoints(configs, search_area):
     lon = start[1]
     startX, startY, startZ = geodetic2ecef(lat, lon, altitude)
     start_n, start_e, d = ecef2ned(startX, startY, startZ, lat, lon, altitude)
-
+    dX = (search_area.br[0] - search_area.bl[0]) * 111111.0
+    dY = (search_area.br[1] - search_area.bl[1]) * 111111.0
+    height = (((search_area.bl[0] - search_area.tl[0]) * 111111.0) ** 2 +
+      ((search_area.bl[1] - search_area.tl[1]) * 111111.0) **2) ** .5
     endX, endY, endZ = geodetic2ecef(end[0], end[1], altitude)
-    end_n, end_e, end_d = ecef2ned(endX, endY, endZ, end[0], end[1], altitude)
+    end_n, end_e, end_d = ecef2ned(endX, endY, endZ, lat, lon, altitude)
 
+    print(height)
 #    fovH = math.radians(62.2)  # raspicam horizontal FOV
 #    boxH = 2 * altitude / math.tan(fovH / 2)  # height of bounding box
 #    overlap = (0.5 * boxH) / (2 * math.pi)  # distance between zags with 50% overlap
@@ -108,43 +112,34 @@ def generate_waypoints(configs, search_area):
     overlap = 3 # 3 meters
 
     temp_n = start_n
-    while temp_n <= end_n:
-        temp_e = start_e
+    temp_e = start_e
+    
+    i = 0
+    while i * 2 * overlap < height:
         # convert NED to LLA
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
+        waypointsLLA.append(LocationGlobalRelative(newLat, newLon, newAlt))
+
+        newLat, newLon, newAlt = ned2geodetic(temp_n + dY, temp_e + dX, d, lat, lon, altitude)
+        waypointsNED.append([temp_n + dY, temp_e + dX, d])
         waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
 
-        temp_e = end_e
-        # convert ECEF to NED and LLA
+        temp_n += overlap * dX / (dY**2 + dX**2)**.5
+        temp_e -= overlap * dY / (dY**2 + dX**2)**.5
+
+        newLat, newLon, newAlt = ned2geodetic(temp_n + dY, temp_e + dX, d, lat, lon, altitude)
+        waypointsNED.append([temp_n + dY, temp_e + dX, d])
+        waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
+
         newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
         waypointsNED.append([temp_n, temp_e, d])
         waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
 
-        temp_n += overlap
-
-        #                     |
-        # --------------------|
-
-        temp_e = end_e
-        # convert ECEF to NED and LLA
-        newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
-        waypointsNED.append([temp_n, temp_e, d])
-        waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
-
-        temp_e = start_e
-        # convert ECEF to NED and LLA
-        newLat, newLon, newAlt = ned2geodetic(temp_n, temp_e, d, lat, lon, altitude)
-        waypointsNED.append([temp_n, temp_e, d])
-        waypointsLLA.append(LocationGlobalRelative(newLat, newLon, altitude))
-
-        temp_n += overlap
-
-        # |
-        # |-------------------|
-        # --------------------|
-
-
+        temp_n += overlap * dX / (dY**2 + dX**2)**.5
+        temp_e -= overlap * dY / (dY**2 + dX**2)**.5
+        
+        i += 1
     return (waypointsNED, waypointsLLA)
 
 def quick_scan_adds_mission(configs, vehicle, lla_waypoint_list):
