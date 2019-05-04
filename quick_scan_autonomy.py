@@ -87,9 +87,9 @@ def generate_waypoints(configs, search_area):
     waypointsLLA = []
 
     # start at the bottom left
-    start = search_area.bl
+    start = search_area.tl
     # end at the top right
-    end = search_area.tr
+    end = search_area.br
 
     # pre-defined in configs file
     altitude = configs["altitude"]
@@ -97,10 +97,10 @@ def generate_waypoints(configs, search_area):
     lon = start[1]
     startX, startY, startZ = geodetic2ecef(lat, lon, altitude)
     start_n, start_e, d = ecef2ned(startX, startY, startZ, lat, lon, altitude)
-    dX = (search_area.br[0] - search_area.bl[0]) * 111111.0
-    dY = (search_area.br[1] - search_area.bl[1]) * 111111.0
-    height = (((search_area.bl[0] - search_area.tl[0]) * 111111.0) ** 2 +
-      ((search_area.bl[1] - search_area.tl[1]) * 111111.0) **2) ** .5
+    dX = (search_area.tl[0] - search_area.bl[0]) * 111111.0
+    dY = (search_area.tl[1] - search_area.bl[1]) * 111111.0
+    height = (((search_area.tl[0] - search_area.tr[0]) * 111111.0) ** 2 +
+      ((search_area.tl[1] - search_area.tr[1]) * 111111.0) **2) ** .5
     endX, endY, endZ = geodetic2ecef(end[0], end[1], altitude)
     end_n, end_e, end_d = ecef2ned(endX, endY, endZ, lat, lon, altitude)
 
@@ -109,7 +109,7 @@ def generate_waypoints(configs, search_area):
 #    boxH = 2 * altitude / math.tan(fovH / 2)  # height of bounding box
 #    overlap = (0.5 * boxH) / (2 * math.pi)  # distance between zags with 50% overlap
 
-    overlap = 3 # 3 meters
+    overlap = 5.5 # 3 meters
 
     temp_n = start_n
     temp_e = start_e
