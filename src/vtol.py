@@ -28,7 +28,7 @@ def setup_vehicle(configs):
         if configs["vehicle_type"] == "VTOL":
             # If running a simulated VTOL on vagrant, connect to it via TCP
             # Port 5763 must be forwarded on vagrant
-            con_str = "tcp:127.0.0.1:5763"
+            con_str = "tcp:127.0.0.1:5760"
         elif configs["vehicle_type"] == "Quadcopter":
             sitl = dronekit_sitl.start_default(lat=35.328423, lon=-120.752505)
             con_str = sitl.connection_string()
@@ -66,12 +66,14 @@ class VTOL(Vehicle):
     MISSION_COMPLETED = False
     coms = None
 
+
     # pylint: disable=no-self-use
     def coms_callback(self, message, _):
         '''callback for radio messages'''
         # TODO respond to xbee messagge
         data = json.loads(message.data)
         print(data['type'])
+
 
     def setup_coms(self):
         '''sets up communication radios'''
@@ -86,7 +88,7 @@ class VTOL(Vehicle):
             print(" Waiting for vehicle to initialise...")
             time.sleep(1)
 
-        self.mode = VehicleMode("GUIDED")
+        self.mode = VehicleMode('GUIDED')
         self.armed = True
 
         while not self.armed:
@@ -108,7 +110,7 @@ class VTOL(Vehicle):
         self.commands.next = 0
 
 
-    def takeoff(self):
+    def takeoff(self, mode="GUIDED"):
         '''Commands drone to take off by arming vehicle and flying to altitude'''
         print("Pre-arm checks")
         while not self.is_armable:
@@ -117,7 +119,7 @@ class VTOL(Vehicle):
 
         print("Arming motors")
         # Vehicle should arm in GUIDED mode
-        self.mode = VehicleMode("GUIDED")
+        self.mode = VehicleMode(mode)
         self.armed = True
 
         while not self.armed:
@@ -193,3 +195,8 @@ class VTOL(Vehicle):
             self.coms.send_till_ack(address, update_message, update_message['id'])
             time.sleep(1)
         self.change_status("ready")
+
+
+if __name__ == '__main__':
+    with open('configs.json', 'r') as config_file:
+        VEHICLE = setup_vehicle(json.load(config_file))
