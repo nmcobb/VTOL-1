@@ -29,7 +29,7 @@ def setup_vehicle(configs):
         if configs["vehicle_type"] == "VTOL":
             # If running a simulated VTOL on vagrant, connect to it via TCP
             # Port 5763 must be forwarded on vagrant
-            con_str = "tcp:127.0.0.1:5760"
+            con_str = "tcp:127.0.0.1:5763"
         elif configs["vehicle_type"] == "Quadcopter":
             sitl = dronekit_sitl.start_default(lat=35.328423, lon=-120.752505)
             con_str = sitl.connection_string()
