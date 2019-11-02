@@ -17,7 +17,7 @@
   },
   "mission_control_MAC": "0013A200409BD79C",
   "baud_rate": 57600,
-  "initialAltitude": 10,
+  "altitude": 10,
   "air_speed": 30,
   "waypoint_tolerance": 3
 }

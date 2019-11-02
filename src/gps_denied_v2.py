@@ -11,8 +11,8 @@ import urllib.request
 import numpy as np
 import cv2
 from simple_pid import PID
-from shapely.geometry import Polygon, Point
 from dronekit import connect, VehicleMode
+from shapely.geometry import Polygon, Point
 from dotenv import load_dotenv
 from vtol import VTOL
 
