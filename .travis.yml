@@ -11,4 +11,4 @@ install:
   
 script:
   - cat tox.ini
-  - tox -e pylint,vtol -c tox.ini
+  - tox -e lint,vtol -c tox.ini
